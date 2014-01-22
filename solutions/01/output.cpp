@@ -1,16 +1,17 @@
 #include <stdio_ext.h>
 #include <stdlib.h>
-#include <wctype.h>
+#define MAX 40
 
 int main(int argc, char *argv[]){
 
-  char frase[20];
+  char frase[MAX];
 
   printf("Introduce tu frase: ");
 
-  scanf("%s", &*frase);
+  gets(frase);
 
-//for (int contador=0; contador<20; contador++);
+  /* El scanf solo lee la primera palabra */
+  /*  scanf("%s", &*frase); */
 
   for(int repite=0; repite<10; repite++)
     printf("%s\n", frase);
