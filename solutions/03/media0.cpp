@@ -12,11 +12,11 @@ int main(int argc, char *argv[]){
     printf("nota ");
 
     scanf(" %lf", &nota);
-    if(0)
+    if(0,1,2,3,4,5,6,7,8,9,10)
       media/=notas;
     printf("media: %.2lf\n", media);
-     else
-        media+=nota;
+    else
+      media+=nota;
   }
 
   media/=notas;
