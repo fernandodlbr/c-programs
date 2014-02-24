@@ -3,17 +3,21 @@
 
 int main(int argc, char *argv[]){
 
-/*usar sizeof*/
-struct list{
+  /*usar sizeof*/
+
   const char *list[]={
     "bread",
     "toast",
     "bacon"
   };
-};
-const char=sizeof(bread);
 
-  printf("%s", list sizeof(struct list));
+  const int list_no = (sizeof list) / (sizeof list[0]);
+
+  printf("%s \n", *list);
+
+  printf("%s \n", (*list)+6);
+
+  printf("%s \n", (*list)+12);
 
   return EXIT_SUCCESS;
 }
