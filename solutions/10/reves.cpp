@@ -7,7 +7,7 @@ int main(int argc, char *argv[]){
   const char *beginning = sentence;
   const char *end = sentence;
 
-  /* Move end to the last byte in sentence*/
+  /* Move end to the last byte in sentence*/ 
 
   printf("%s\n", end); 
 
