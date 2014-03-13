@@ -13,7 +13,9 @@ int main(int argc, char *argv[]){
 
 //  const int list_no = (sizeof list) / (sizeof list[0]);
 
-for(int cont=0; cont<3; cont++)
+// for(int cont=0; list[i] != NULL; cont++)  Si hay valor NULL en la const
+
+for(int cont=0; cont<sizeof(list) / sizeof(char *); cont++)
   printf("%s \n", list[cont]);
 
 //  printf("%s\n", *list);
