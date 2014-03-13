@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[]){
 
-  /*usar sizeof*/
+//  usar sizeof
 
   const char *list[]={
     "bread",
@@ -11,13 +11,14 @@ int main(int argc, char *argv[]){
     "bacon"
   };
 
-  const int list_no = (sizeof list) / (sizeof list[0]);
+//  const int list_no = (sizeof list) / (sizeof list[0]);
 
-  printf("%s \n", *list);
+for(int cont=0; cont<3; cont++)
+  printf("%s \n", list[cont]);
 
-  printf("%s \n", (*list)+6);
+//  printf("%s \n", (*list)+6);
 
-  printf("%s \n", (*list)+12);
+//  printf("%s \n", (*list)+12);
 
   return EXIT_SUCCESS;
 }
