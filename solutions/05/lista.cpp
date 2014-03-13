@@ -16,9 +16,9 @@ int main(int argc, char *argv[]){
 for(int cont=0; cont<3; cont++)
   printf("%s \n", list[cont]);
 
-//  printf("%s \n", (*list)+6);
-
-//  printf("%s \n", (*list)+12);
+//  printf("%s\n", *list);
+//  printf("%s\n", (*list)+6);
+//  printf("%s\n", (*list)+12);
 
   return EXIT_SUCCESS;
 }
