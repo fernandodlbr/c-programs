@@ -10,8 +10,8 @@ int main(int argc, char *argv[]){
 
   gets(frase);
 
-  /* El scanf solo lee la primera palabra */
-  /*  scanf("%s", &*frase); */
+  // El scanf solo lee la primera palabra
+  // scanf("%s", &*frase);
 
   for(int repite=0; repite<10; repite++)
     printf("%s\n", frase);
