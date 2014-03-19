@@ -11,12 +11,14 @@ int main(int argc, char *argv[]){
   do{
     *end++;
   }while(*end != '\0');
+  //while(*end++ != '\0');
+  //for(; *end != '\0'; end++)
 
-// reducir el puntero end hasta que sea igual que beginning
+  // reducir el puntero end hasta que sea igual que beginning
   do{
     end--;
     printf("%c", *end); 
-  }while(*end != *beginning);
+  }while(end != beginning);
 
   printf("\n");
 
