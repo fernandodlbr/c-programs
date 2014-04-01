@@ -10,7 +10,7 @@ int main(int argc, char *argv[]){
     primo[0] = 2;
 
 /*
-mostrar 70 primos
+Mostrar 70 primos
   dividir el posible primo entre los otros primos
   añadir el nuevo primo a la lista de primos
 */
