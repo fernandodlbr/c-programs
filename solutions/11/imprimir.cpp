@@ -4,11 +4,16 @@
 
 int main(int argc, char *argv[]){
 
-int strcmp (const char *list[]={"yiel", " yelp"});
+    const char *list[] = { "yield", "yelp"};
 
-// el strcmp compara y ordena las palabras
+    if (strcmp(list[0], list[1]) > 0){
+        const char *aux = list[1];
+        list[1] = list[0];
+        list[0] = aux;
+    }
 
-  printf("%s\n",list);
+    for (int i=0; i<2; i++)
+        printf("%s\n", list[i]);
 
-return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }

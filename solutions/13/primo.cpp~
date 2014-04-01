@@ -1,4 +1,4 @@
-#include <stdio_ext.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 #define N 70
@@ -6,7 +6,9 @@
 int main(int argc, char *argv[]){
 
     int primo[N];
-    int primo_siguiente = 1;                           
+    int primo_siguiente = 1; // Indica el numero de celda en el
+                             //que guardar el siguiente primo.
+
     primo[0] = 2;
 
 /*
@@ -14,6 +16,7 @@ mostrar 70 primos
   dividir el posible primo entre los otros primos
   añadir el nuevo primo a la lista de primos
 */
+
 
     for(int candidato = 3; primo_siguiente < N; candidato++){ 
         bool puede_ser_primo = true;
