@@ -1,3 +1,6 @@
+#include <stdio_ext.h>
+#include <stdlib.h>
+
 /*
             *******************************
 				*	EL JUEGO DE LA SERPIENTE	*
@@ -14,8 +17,6 @@
    Tiempo máximo estimado para su realización:  12 a 20 horas.
 	Fecha última de entrega: 30 de Marzo a las 12:00 h
 */
-
-
 
 
 /*		DATOS
@@ -55,6 +56,8 @@
 
 		FINDATOS
 */
+
+
 
 void pintadoPresentacion();
 /*
