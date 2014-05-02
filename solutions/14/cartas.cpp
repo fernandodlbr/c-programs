@@ -1,35 +1,26 @@
 #include <stdio_ext.h>
 #include <stdlib.h>
-#include <string.h>
-
-void reparto(int jugadores[], int num_jugadores, int num_cartas){
-
-  static int posicion=0;
-
-  for(int contador=num_cartas; contador>0; contador--) 
-    jugadores[posicion++ % num_jugadores] += 1 ;
-}
-
-void error(char *argv[0]){
-  fprintf(stderr, "Usage %s <number_of_players> <number_of_cards> \n", argv[0]);
-  exit(EXIT_FAILURE);
-}
 
 int main(int argc, char *argv[]){
 
-  if(argc < 3)
-    error(argv);
+  int a[] = {22, 3, 77, 50, 40, 23, 37, 35, 22, 2, 61, 71, 0};
+  int auxiliar;
+  int comparar = 0;
+  int numeros = sizeof(a) / sizeof( int *); 
 
-  int num_jugadores = atoi(argv[1]), 
-      jugadores[num_jugadores], 
-      num_cartas = atoi(argv[2]);
+  for(int contador=0; contador<numeros; contador++){
+    for(int siguiente = contador+1; siguiente<numeros; siguiente++)
 
-  memset(jugadores, 0, sizeof(jugadores));
+      if(a[contador] > a[siguiente]){
+	auxiliar = a[contador]; 
+	a[contador] = a[siguiente];
+	a[siguiente] = auxiliar;
+      }
+  }
 
-  reparto(jugadores, num_jugadores, num_cartas);
-
-  for(int contador=0; contador<num_jugadores; contador++)
-    printf("Jugador%i: %i cartas\n", contador+1, jugadores[contador]);
+  for(int i=0; i<numeros; i++)
+    printf("%i ", a[i]); 
+  printf("\n");
 
   return EXIT_SUCCESS;
 }
